@@ -17,8 +17,8 @@ def calc_camera_location(center_position, radius, pan_angle, tilt_angle):
     :return: カメラの位置（x, y, z）
     """
     target_tilt_angle = 90 - tilt_angle
-    target_x = radius * math.sin(math.radians(pan_angle)) * math.cos(math.radians(target_tilt_angle)) + center_position[0]
-    target_y = radius * math.cos(math.radians(target_tilt_angle))
+    target_x = -1 * radius * math.sin(math.radians(pan_angle)) * math.cos(math.radians(target_tilt_angle)) + center_position[0]
+    target_y = radius * math.cos(math.radians(target_tilt_angle)) * math.cos(math.radians(pan_angle))
     target_z = radius * math.sin(math.radians(target_tilt_angle)) + CENTER_POSITION[2]
     print(f"target_x: {target_x}, target_y: {target_y}, target_z: {target_z}")
     return (target_x, target_y, target_z)
@@ -35,7 +35,7 @@ def calc_camera_rotation_euler(center_position, radius, pan_angle, tilt_angle):
     math.radians(tilt_deg), 0, 
     target_x = math.radians(tilt_deg)
     target_y = 0
-    target_z = math.radians(pan_deg)
+    target_z = math.radians(pan_deg + 180)
     print(f"target_rotation_euler_x: {target_x}, target_rotation_euler_y: {target_y}, target_rotation_euler_z: {target_z}")
     return (target_x, target_y, target_z)
 
@@ -75,8 +75,8 @@ if __name__ == '__main__':
     CENTER_POSITION = (0, 0, 1.7)       # 被写体の中心位置（90度の時）
     RADIUS = 3                          # カメラが被写体から離れる距離
     FOCAL_LENGTH = 24                   # カメラの焦点距離
-    ANGLE_INTERVAL = 10                 # 角度間隔（度単位）
-    TILTS = [60, 90]                    # tiltの傾きの設定リスト（60度と90度）
+    ANGLE_INTERVAL = 60                 # 角度間隔（度単位）
+    TILTS = [60,90]                    # tiltの傾きの設定リスト（60度と90度）
 
     # ファイルの保存先のディレクトリを取得
     script_directory = os.path.dirname(bpy.data.filepath)
