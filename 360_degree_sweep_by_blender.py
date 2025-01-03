@@ -68,15 +68,21 @@ if __name__ == '__main__':
 
     # シーンの設定
 
-    # 画像のレンダリング設定
-    bpy.context.scene.render.image_settings.file_format = 'PNG'
+    # # 画像のレンダリング設定
+    # bpy.context.scene.render.image_settings.file_format = 'PNG'
+    
+    # 画像形式をJPEGに設定し、品質を80に設定
+    bpy.context.scene.render.image_settings.file_format = 'JPEG'
+    bpy.context.scene.render.image_settings.quality = 80
 
     # パラメータの設定
     CENTER_POSITION = (0, 0, 1.0)       # 被写体の中心位置（90度の時）
     RADIUS = 3                          # カメラが被写体から離れる距離
-    FOCAL_LENGTH = 24                   # カメラの焦点距離
-    ANGLE_INTERVAL = 10                 # 角度間隔（度単位）
-    TILTS = [30,60,90,120,150]                    # tiltの傾きの設定リスト
+    FOCAL_LENGTH_ST = 20                # カメラの焦点距離（開始）
+    FOCAL_LENGTH_ED = 50                # カメラの焦点距離（終了）
+    FOCAL_LENGTH_INTERVAL = 10          # カメラの焦点距離の間隔
+    PAN_ANGLE_INTERVAL = 10             # Pan角度間隔（度単位）
+    TILT_ANGLE_INTERVAL = 10            # Tilt角度間隔（度単位）
 
     # ファイルの保存先のディレクトリを取得
     script_directory = os.path.dirname(bpy.data.filepath)
@@ -99,76 +105,79 @@ if __name__ == '__main__':
     count = 0
 
     # レンダリングの実行
-    for tilt_deg in TILTS:
+    for focal_length_val in range(FOCAL_LENGTH_ST, (FOCAL_LENGTH_ED + 1), FOCAL_LENGTH_INTERVAL):
 
-        # tiltの傾きを設定
-        for pan_deg in range(0, 360, ANGLE_INTERVAL):
+        for tilt_deg in range(0, (180 + 1), TILT_ANGLE_INTERVAL):
 
-            # 新しいカメラを作成
-            camera = create_new_camera(camera_name=f"Camera_{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}")
+            # tiltの傾きを設定
+            for pan_deg in range(0, 360, PAN_ANGLE_INTERVAL):
 
-            # カメラの位置を更新
-            camera.location = calc_camera_location(CENTER_POSITION, RADIUS, pan_deg, tilt_deg)
+                # 新しいカメラを作成
+                camera = create_new_camera(camera_name=f"Camera_{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}_f{focal_length_val}")
 
-            # カメラを常に中心（被写体）に向けるように回転
-            camera.rotation_euler = calc_camera_rotation_euler(CENTER_POSITION, RADIUS, pan_deg, tilt_deg)
+                # カメラの位置を更新
+                camera.location = calc_camera_location(CENTER_POSITION, RADIUS, pan_deg, tilt_deg)
 
-            # カメラの焦点距離を設定
-            camera.data.lens = FOCAL_LENGTH
+                # カメラを常に中心（被写体）に向けるように回転
+                camera.rotation_euler = calc_camera_rotation_euler(CENTER_POSITION, RADIUS, pan_deg, tilt_deg)
 
-            # 新しく作成したカメラをアクティブに設定
-            bpy.context.scene.camera = camera
+                # カメラの焦点距離を設定
+                camera.data.lens = focal_length_val
 
-            # 出力ファイル名を設定
-            filename = f"{tmp_directory}/{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}.png"
-            bpy.context.scene.render.filepath = filename
+                # 新しく作成したカメラをアクティブに設定
+                bpy.context.scene.camera = camera
 
-            # レンダリング実行
-            bpy.ops.render.render(write_still=True)
+                # 出力ファイル名を設定
+                # filename = f"{tmp_directory}/{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}_f{focal_length_val}.png"
+                filename = f"{tmp_directory}/{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}_f{focal_length_val}.jpg"
+                bpy.context.scene.render.filepath = filename
 
-            # カメラの位置と回転情報を辞書に格納
-            camera_info = {
-                "id": count,
-                "filename": filename,
-                "tilt_angle": tilt_deg,
-                "pan_angle": pan_deg,
-                "center_position": {
-                    "x": CENTER_POSITION[0],
-                    "y": CENTER_POSITION[1],
-                    "z": CENTER_POSITION[2]
-                },
-                "radius": RADIUS,
-                "camera_location": {
-                    "x": camera.location.x,
-                    "y": camera.location.y,
-                    "z": camera.location.z
-                },
-                "camera_rotation": {
-                    "x": camera.rotation_euler.x,
-                    "y": camera.rotation_euler.y,
-                    "z": camera.rotation_euler.z
-                },
-                "camera_rotation_deg": {
-                    "x": math.degrees(camera.rotation_euler.x),
-                    "y": math.degrees(camera.rotation_euler.y),
-                    "z": math.degrees(camera.rotation_euler.z)
-                },
-                "focal_length": {
-                    "focal_length": camera.data.lens
+                # レンダリング実行
+                bpy.ops.render.render(write_still=True)
+
+                # カメラの位置と回転情報を辞書に格納
+                camera_info = {
+                    "id": count,
+                    "filename": filename,
+                    "tilt_angle": tilt_deg,
+                    "pan_angle": pan_deg,
+                    "center_position": {
+                        "x": CENTER_POSITION[0],
+                        "y": CENTER_POSITION[1],
+                        "z": CENTER_POSITION[2]
+                    },
+                    "radius": RADIUS,
+                    "camera_location": {
+                        "x": camera.location.x,
+                        "y": camera.location.y,
+                        "z": camera.location.z
+                    },
+                    "camera_rotation": {
+                        "x": camera.rotation_euler.x,
+                        "y": camera.rotation_euler.y,
+                        "z": camera.rotation_euler.z
+                    },
+                    "camera_rotation_deg": {
+                        "x": math.degrees(camera.rotation_euler.x),
+                        "y": math.degrees(camera.rotation_euler.y),
+                        "z": math.degrees(camera.rotation_euler.z)
+                    },
+                    "focal_length": {
+                        "focal_length": camera.data.lens
+                    }
                 }
-            }
-            camera_data.append(camera_info)
+                camera_data.append(camera_info)
 
-            # デバッグ情報を表示
-            print(f"Rendered: {filename}")
-            print(f"Camera Position: {camera.location}")
-            print(f"Camera Rotation: {camera.rotation_euler}")
+                # デバッグ情報を表示
+                print(f"Rendered: {filename}")
+                print(f"Camera Position: {camera.location}")
+                print(f"Camera Rotation: {camera.rotation_euler}")
 
-            # # 新しく作成したカメラを削除してメモリを解放
-            # bpy.data.objects.remove(camera, do_unlink=True)
+                # # 新しく作成したカメラを削除してメモリを解放
+                # bpy.data.objects.remove(camera, do_unlink=True)
 
-            # カウンタを更新
-            count += 1
+                # カウンタを更新
+                count += 1
 
     # カメラの位置と回転情報をJSONファイルに保存
     with open(json_file_path, 'w') as json_file:

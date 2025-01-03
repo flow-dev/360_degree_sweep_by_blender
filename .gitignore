@@ -1,2 +1,4 @@
 
 *.blend1
+/generated_images_debug
+*.db
