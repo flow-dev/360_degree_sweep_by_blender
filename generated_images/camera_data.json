@@ -1,0 +1,2090 @@
+[
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_000.png",
+        "tilt_angle": 60,
+        "pan_angle": 0,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.0,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_010.png",
+        "tilt_angle": 60,
+        "pan_angle": 10,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.45115119218826294,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.1745329201221466
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 9.99999970909292
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_020.png",
+        "tilt_angle": 60,
+        "pan_angle": 20,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.888594388961792,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.3490658402442932
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 19.99999941818584
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_030.png",
+        "tilt_angle": 60,
+        "pan_angle": 30,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.299038052558899,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.5235987901687622
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 30.000000834826057
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_040.png",
+        "tilt_angle": 60,
+        "pan_angle": 40,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.6700111627578735,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.6981316804885864
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 39.99999883637168
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_050.png",
+        "tilt_angle": 60,
+        "pan_angle": 50,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.9902418851852417,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 0.8726646304130554
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 50.0000002530119
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_060.png",
+        "tilt_angle": 60,
+        "pan_angle": 60,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.25,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.0471975803375244
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 60.000001669652114
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_070.png",
+        "tilt_angle": 60,
+        "pan_angle": 70,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.4413931369781494,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.2217304706573486
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 69.99999967119774
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_080.png",
+        "tilt_angle": 60,
+        "pan_angle": 80,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.558605670928955,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.3962633609771729
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 79.99999767274336
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_090.png",
+        "tilt_angle": 60,
+        "pan_angle": 90,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.598076105117798,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.5707963705062866
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 90.00000250447816
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_100.png",
+        "tilt_angle": 60,
+        "pan_angle": 100,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.558605670928955,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.7453292608261108
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 100.0000005060238
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_110.png",
+        "tilt_angle": 60,
+        "pan_angle": 110,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.4413931369781494,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 1.919862151145935
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 109.99999850756943
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_120.png",
+        "tilt_angle": 60,
+        "pan_angle": 120,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.25,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.094395160675049
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 120.00000333930423
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_130.png",
+        "tilt_angle": 60,
+        "pan_angle": 130,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.9902418851852417,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.268928050994873
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 130.00000134084985
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_140.png",
+        "tilt_angle": 60,
+        "pan_angle": 140,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.6700111627578735,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.4434609413146973
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 139.99999934239548
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_150.png",
+        "tilt_angle": 60,
+        "pan_angle": 150,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.299038052558899,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.6179938316345215
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 149.99999734394112
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_160.png",
+        "tilt_angle": 60,
+        "pan_angle": 160,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.888594388961792,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.7925267219543457
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 159.99999534548672
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_170.png",
+        "tilt_angle": 60,
+        "pan_angle": 170,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.45115119218826294,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 2.96705961227417
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 169.99999334703236
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_180.png",
+        "tilt_angle": 60,
+        "pan_angle": 180,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 3.1817257416390894e-16,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 3.1415927410125732
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 180.00000500895632
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_190.png",
+        "tilt_angle": 60,
+        "pan_angle": 190,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.45115119218826294,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 3.3161256313323975
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 190.00000301050196
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_200.png",
+        "tilt_angle": 60,
+        "pan_angle": 200,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.888594388961792,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 3.4906585216522217
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 200.0000010120476
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_210.png",
+        "tilt_angle": 60,
+        "pan_angle": 210,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.299038052558899,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 3.665191411972046
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 209.99999901359323
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_220.png",
+        "tilt_angle": 60,
+        "pan_angle": 220,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.6700111627578735,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 3.83972430229187
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 219.99999701513886
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_230.png",
+        "tilt_angle": 60,
+        "pan_angle": 230,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.9902418851852417,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.014257431030273
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 230.00000867706282
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_240.png",
+        "tilt_angle": 60,
+        "pan_angle": 240,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.25,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.188790321350098
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 240.00000667860846
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_250.png",
+        "tilt_angle": 60,
+        "pan_angle": 250,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.4413931369781494,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.363323211669922
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 250.00000468015406
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_260.png",
+        "tilt_angle": 60,
+        "pan_angle": 260,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.558605670928955,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.537856101989746
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 260.0000026816997
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_270.png",
+        "tilt_angle": 60,
+        "pan_angle": 270,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.598076105117798,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.71238899230957
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 270.00000068324533
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_280.png",
+        "tilt_angle": 60,
+        "pan_angle": 280,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.558605670928955,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 4.8869218826293945
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 279.99999868479097
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_290.png",
+        "tilt_angle": 60,
+        "pan_angle": 290,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.4413931369781494,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.061454772949219
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 289.9999966863366
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_300.png",
+        "tilt_angle": 60,
+        "pan_angle": 300,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.25,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.235987663269043
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 299.99999468788224
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_310.png",
+        "tilt_angle": 60,
+        "pan_angle": 310,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.9902418851852417,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.410520553588867
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 309.99999268942787
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_320.png",
+        "tilt_angle": 60,
+        "pan_angle": 320,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.6700111627578735,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.585053443908691
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 319.99999069097345
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_330.png",
+        "tilt_angle": 60,
+        "pan_angle": 330,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.299038052558899,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.759586334228516
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 329.9999886925191
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_340.png",
+        "tilt_angle": 60,
+        "pan_angle": 340,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.888594388961792,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 5.93411922454834
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 339.9999866940647
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_060_pan_350.png",
+        "tilt_angle": 60,
+        "pan_angle": 350,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.45115119218826294,
+            "y": 2.598076105117798,
+            "z": 3.200000047683716
+        },
+        "camera_rotation": {
+            "x": 1.0471975803375244,
+            "y": 0.0,
+            "z": 6.108652591705322
+        },
+        "camera_rotation_deg": {
+            "x": 60.000001669652114,
+            "y": 0.0,
+            "z": 350.00001201636707
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_000.png",
+        "tilt_angle": 90,
+        "pan_angle": 0,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_010.png",
+        "tilt_angle": 90,
+        "pan_angle": 10,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.5209445357322693,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.1745329201221466
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 9.99999970909292
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_020.png",
+        "tilt_angle": 90,
+        "pan_angle": 20,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.0260604619979858,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.3490658402442932
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 19.99999941818584
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_030.png",
+        "tilt_angle": 90,
+        "pan_angle": 30,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.5,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.5235987901687622
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 30.000000834826057
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_040.png",
+        "tilt_angle": 90,
+        "pan_angle": 40,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.9283628463745117,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.6981316804885864
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 39.99999883637168
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_050.png",
+        "tilt_angle": 90,
+        "pan_angle": 50,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.298133373260498,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 0.8726646304130554
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 50.0000002530119
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_060.png",
+        "tilt_angle": 90,
+        "pan_angle": 60,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.598076105117798,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.0471975803375244
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 60.000001669652114
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_070.png",
+        "tilt_angle": 90,
+        "pan_angle": 70,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.819077968597412,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.2217304706573486
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 69.99999967119774
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_080.png",
+        "tilt_angle": 90,
+        "pan_angle": 80,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.954423189163208,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.3962633609771729
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 79.99999767274336
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_090.png",
+        "tilt_angle": 90,
+        "pan_angle": 90,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.5707963705062866
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 90.00000250447816
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_100.png",
+        "tilt_angle": 90,
+        "pan_angle": 100,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.954423189163208,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.7453292608261108
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 100.0000005060238
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_110.png",
+        "tilt_angle": 90,
+        "pan_angle": 110,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.819077968597412,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 1.919862151145935
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 109.99999850756943
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_120.png",
+        "tilt_angle": 90,
+        "pan_angle": 120,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.598076105117798,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.094395160675049
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 120.00000333930423
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_130.png",
+        "tilt_angle": 90,
+        "pan_angle": 130,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 2.298133373260498,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.268928050994873
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 130.00000134084985
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_140.png",
+        "tilt_angle": 90,
+        "pan_angle": 140,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.9283628463745117,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.4434609413146973
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 139.99999934239548
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_150.png",
+        "tilt_angle": 90,
+        "pan_angle": 150,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.5,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.6179938316345215
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 149.99999734394112
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_160.png",
+        "tilt_angle": 90,
+        "pan_angle": 160,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 1.0260604619979858,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.7925267219543457
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 159.99999534548672
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_170.png",
+        "tilt_angle": 90,
+        "pan_angle": 170,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 0.5209445357322693,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 2.96705961227417
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 169.99999334703236
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_180.png",
+        "tilt_angle": 90,
+        "pan_angle": 180,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": 3.6739402930577075e-16,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 3.1415927410125732
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 180.00000500895632
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_190.png",
+        "tilt_angle": 90,
+        "pan_angle": 190,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.5209445357322693,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 3.3161256313323975
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 190.00000301050196
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_200.png",
+        "tilt_angle": 90,
+        "pan_angle": 200,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.0260604619979858,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 3.4906585216522217
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 200.0000010120476
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_210.png",
+        "tilt_angle": 90,
+        "pan_angle": 210,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.5,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 3.665191411972046
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 209.99999901359323
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_220.png",
+        "tilt_angle": 90,
+        "pan_angle": 220,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.9283628463745117,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 3.83972430229187
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 219.99999701513886
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_230.png",
+        "tilt_angle": 90,
+        "pan_angle": 230,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.298133373260498,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.014257431030273
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 230.00000867706282
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_240.png",
+        "tilt_angle": 90,
+        "pan_angle": 240,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.598076105117798,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.188790321350098
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 240.00000667860846
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_250.png",
+        "tilt_angle": 90,
+        "pan_angle": 250,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.819077968597412,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.363323211669922
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 250.00000468015406
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_260.png",
+        "tilt_angle": 90,
+        "pan_angle": 260,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.954423189163208,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.537856101989746
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 260.0000026816997
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_270.png",
+        "tilt_angle": 90,
+        "pan_angle": 270,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -3.0,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.71238899230957
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 270.00000068324533
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_280.png",
+        "tilt_angle": 90,
+        "pan_angle": 280,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.954423189163208,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 4.8869218826293945
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 279.99999868479097
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_290.png",
+        "tilt_angle": 90,
+        "pan_angle": 290,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.819077968597412,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.061454772949219
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 289.9999966863366
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_300.png",
+        "tilt_angle": 90,
+        "pan_angle": 300,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.598076105117798,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.235987663269043
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 299.99999468788224
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_310.png",
+        "tilt_angle": 90,
+        "pan_angle": 310,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -2.298133373260498,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.410520553588867
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 309.99999268942787
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_320.png",
+        "tilt_angle": 90,
+        "pan_angle": 320,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.9283628463745117,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.585053443908691
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 319.99999069097345
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_330.png",
+        "tilt_angle": 90,
+        "pan_angle": 330,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.5,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.759586334228516
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 329.9999886925191
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_340.png",
+        "tilt_angle": 90,
+        "pan_angle": 340,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -1.0260604619979858,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 5.93411922454834
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 339.9999866940647
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    },
+    {
+        "filename": "C:\\Users\\sikij\\Documents\\GitHub\\360_degree_sweep_by_blender\\generated_images/tilt_090_pan_350.png",
+        "tilt_angle": 90,
+        "pan_angle": 350,
+        "center_position": {
+            "x": 0,
+            "y": 0,
+            "z": 1.7
+        },
+        "radius": 3,
+        "camera_location": {
+            "x": -0.5209445357322693,
+            "y": 3.0,
+            "z": 1.7000000476837158
+        },
+        "camera_rotation": {
+            "x": 1.5707963705062866,
+            "y": 0.0,
+            "z": 6.108652591705322
+        },
+        "camera_rotation_deg": {
+            "x": 90.00000250447816,
+            "y": 0.0,
+            "z": 350.00001201636707
+        },
+        "focal_length": {
+            "focal_length": 24.0
+        }
+    }
+]
