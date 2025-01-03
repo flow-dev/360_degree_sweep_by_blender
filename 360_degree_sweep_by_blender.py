@@ -50,6 +50,20 @@ def create_new_camera(camera_name="Camera"):
     new_camera.name = camera_name
     return new_camera
 
+def create_or_clear_collection(collection_name="CameraCollection"):
+    # コレクションがすでに存在する場合、削除して空にする
+    if collection_name in bpy.data.collections:
+        existing_collection = bpy.data.collections[collection_name]
+        # コレクション内のすべてのオブジェクトを削除
+        for obj in list(existing_collection.objects):
+            existing_collection.objects.unlink(obj)
+        return existing_collection
+    else:
+        # 新しいコレクションを作成
+        new_collection = bpy.data.collections.new(collection_name)
+        bpy.context.scene.collection.children.link(new_collection)
+        return new_collection
+
 if __name__ == '__main__':
 
     # シーンの設定
@@ -76,6 +90,10 @@ if __name__ == '__main__':
     # JSONファイルの保存先
     json_file_path = os.path.join(tmp_directory, "camera_data.json")
     camera_data = []
+
+    # 新しいコレクションを作成または既存のコレクションを空にしてアクティブに設定
+    camera_collection = create_or_clear_collection("CameraCollection")
+    bpy.context.view_layer.active_layer_collection = bpy.context.view_layer.layer_collection.children[camera_collection.name]
 
     # レンダリングの実行
     for tilt_deg in TILTS:
