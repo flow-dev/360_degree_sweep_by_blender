@@ -72,11 +72,11 @@ if __name__ == '__main__':
     bpy.context.scene.render.image_settings.file_format = 'PNG'
 
     # パラメータの設定
-    CENTER_POSITION = (0, 0, 1.7)       # 被写体の中心位置（90度の時）
+    CENTER_POSITION = (0, 0, 1.0)       # 被写体の中心位置（90度の時）
     RADIUS = 3                          # カメラが被写体から離れる距離
     FOCAL_LENGTH = 24                   # カメラの焦点距離
-    ANGLE_INTERVAL = 60                 # 角度間隔（度単位）
-    TILTS = [60,90]                    # tiltの傾きの設定リスト（60度と90度）
+    ANGLE_INTERVAL = 10                 # 角度間隔（度単位）
+    TILTS = [30,60,90,120,150]                    # tiltの傾きの設定リスト
 
     # ファイルの保存先のディレクトリを取得
     script_directory = os.path.dirname(bpy.data.filepath)
@@ -95,6 +95,9 @@ if __name__ == '__main__':
     camera_collection = create_or_clear_collection("CameraCollection")
     bpy.context.view_layer.active_layer_collection = bpy.context.view_layer.layer_collection.children[camera_collection.name]
 
+    # カメラの数をカウント
+    count = 0
+
     # レンダリングの実行
     for tilt_deg in TILTS:
 
@@ -102,7 +105,7 @@ if __name__ == '__main__':
         for pan_deg in range(0, 360, ANGLE_INTERVAL):
 
             # 新しいカメラを作成
-            camera = create_new_camera(camera_name=f"Camera_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}")
+            camera = create_new_camera(camera_name=f"Camera_{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}")
 
             # カメラの位置を更新
             camera.location = calc_camera_location(CENTER_POSITION, RADIUS, pan_deg, tilt_deg)
@@ -117,7 +120,7 @@ if __name__ == '__main__':
             bpy.context.scene.camera = camera
 
             # 出力ファイル名を設定
-            filename = f"{tmp_directory}/tilt_{tilt_deg:03d}_pan_{pan_deg:03d}.png"
+            filename = f"{tmp_directory}/{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}.png"
             bpy.context.scene.render.filepath = filename
 
             # レンダリング実行
@@ -125,6 +128,7 @@ if __name__ == '__main__':
 
             # カメラの位置と回転情報を辞書に格納
             camera_info = {
+                "id": count,
                 "filename": filename,
                 "tilt_angle": tilt_deg,
                 "pan_angle": pan_deg,
@@ -162,6 +166,9 @@ if __name__ == '__main__':
 
             # # 新しく作成したカメラを削除してメモリを解放
             # bpy.data.objects.remove(camera, do_unlink=True)
+
+            # カウンタを更新
+            count += 1
 
     # カメラの位置と回転情報をJSONファイルに保存
     with open(json_file_path, 'w') as json_file:
