@@ -78,9 +78,9 @@ if __name__ == '__main__':
     # パラメータの設定
     CENTER_POSITION = (0, 0, 1.0)       # 被写体の中心位置（90度の時）
     RADIUS = 3                          # カメラが被写体から離れる距離
-    FOCAL_LENGTH_ST = 20                # カメラの焦点距離（開始）
-    FOCAL_LENGTH_ED = 50                # カメラの焦点距離（終了）
-    FOCAL_LENGTH_INTERVAL = 10          # カメラの焦点距離の間隔
+    FOCAL_LENGTH_ST = 35                # カメラの焦点距離（開始）
+    FOCAL_LENGTH_ED = 35                # カメラの焦点距離（終了）
+    FOCAL_LENGTH_INTERVAL = 1           # カメラの焦点距離の間隔
     PAN_ANGLE_INTERVAL = 10             # Pan角度間隔（度単位）
     TILT_ANGLE_INTERVAL = 10            # Tilt角度間隔（度単位）
 
