@@ -17,8 +17,8 @@ def calc_camera_location(center_position, radius, pan_angle, tilt_angle):
     :return: カメラの位置（x, y, z）
     """
     target_tilt_angle = 90 - tilt_angle
-    target_x = -1 * radius * math.sin(math.radians(pan_angle)) * math.cos(math.radians(target_tilt_angle)) + center_position[0]
-    target_y = radius * math.cos(math.radians(target_tilt_angle)) * math.cos(math.radians(pan_angle))
+    target_x = radius * math.sin(math.radians(pan_angle)) * math.cos(math.radians(target_tilt_angle)) + center_position[0]
+    target_y = -1 * radius * math.cos(math.radians(target_tilt_angle)) * math.cos(math.radians(pan_angle))
     target_z = radius * math.sin(math.radians(target_tilt_angle)) + CENTER_POSITION[2]
     print(f"target_x: {target_x}, target_y: {target_y}, target_z: {target_z}")
     return (target_x, target_y, target_z)
@@ -35,7 +35,7 @@ def calc_camera_rotation_euler(center_position, radius, pan_angle, tilt_angle):
     math.radians(tilt_deg), 0, 
     target_x = math.radians(tilt_deg)
     target_y = 0
-    target_z = math.radians(pan_deg + 180)
+    target_z = math.radians(pan_deg)
     print(f"target_rotation_euler_x: {target_x}, target_rotation_euler_y: {target_y}, target_rotation_euler_z: {target_z}")
     return (target_x, target_y, target_z)
 
@@ -110,7 +110,8 @@ if __name__ == '__main__':
         for tilt_deg in range(0, (180 + 1), TILT_ANGLE_INTERVAL):
 
             # tiltの傾きを設定
-            for pan_deg in range(0, 360, PAN_ANGLE_INTERVAL):
+            for pan_deg in range(0, 360, PAN_ANGLE_INTERVAL): # 0度から360度まで
+            # for pan_deg in list(range(0, 91, PAN_ANGLE_INTERVAL)) + list(range(270, 361, PAN_ANGLE_INTERVAL)):  # 0度から90度までと270度から360度まで
 
                 # 新しいカメラを作成
                 camera = create_new_camera(camera_name=f"Camera_{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}_f{focal_length_val}")
