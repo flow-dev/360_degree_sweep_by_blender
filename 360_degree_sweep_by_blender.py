@@ -32,10 +32,9 @@ def calc_camera_rotation_euler(center_position, radius, pan_angle, tilt_angle):
     :param tilt_angle: カメラのチルト角度（垂直方向の角度）
     :return: カメラの回転情報（x, y, z）
     """
-    math.radians(tilt_deg), 0, 
-    target_x = math.radians(tilt_deg)
+    target_x = math.radians(tilt_angle)
     target_y = 0
-    target_z = math.radians(pan_deg)
+    target_z = math.radians(pan_angle)
     print(f"target_rotation_euler_x: {target_x}, target_rotation_euler_y: {target_y}, target_rotation_euler_z: {target_z}")
     return (target_x, target_y, target_z)
 
@@ -111,7 +110,7 @@ if __name__ == '__main__':
 
             # tiltの傾きを設定
             for pan_deg in range(0, 360, PAN_ANGLE_INTERVAL): # 0度から360度まで
-            # for pan_deg in list(range(0, 91, PAN_ANGLE_INTERVAL)) + list(range(270, 361, PAN_ANGLE_INTERVAL)):  # 0度から90度までと270度から360度まで
+            # for pan_deg in list(range(270, 360, PAN_ANGLE_INTERVAL)) + list(range(0, (90 + 1), PAN_ANGLE_INTERVAL)):  # 0度から90度までと270度から360度まで
 
                 # 新しいカメラを作成
                 camera = create_new_camera(camera_name=f"Camera_{count:04d}_tilt_{tilt_deg:03d}_pan_{pan_deg:03d}_f{focal_length_val}")
@@ -138,39 +137,48 @@ if __name__ == '__main__':
 
                 # カメラの位置と回転情報を辞書に格納
                 camera_info = {
-                    "id": count,
-                    "filename": filename,
-                    "tilt_angle": tilt_deg,
-                    "pan_angle": pan_deg,
-                    "center_position": {
+                    "id": count, # カメラのID
+                    "filename": os.path.basename(filename), # レンダリング画像のファイル名
+                    "tilt_angle": tilt_deg, # チルト角度
+                    "pan_angle": pan_deg,  # パン角度
+                    "center_position": { # 被写体の中心位置
                         "x": CENTER_POSITION[0],
                         "y": CENTER_POSITION[1],
                         "z": CENTER_POSITION[2]
                     },
                     "radius": RADIUS,
-                    "camera_location": {
+                    "camera_location": { # カメラの位置
                         "x": camera.location.x,
                         "y": camera.location.y,
                         "z": camera.location.z
                     },
-                    "camera_rotation": {
+                    "camera_rotation": { # カメラの回転角度（ラジアン単位）
                         "x": camera.rotation_euler.x,
                         "y": camera.rotation_euler.y,
                         "z": camera.rotation_euler.z
                     },
-                    "camera_rotation_deg": {
+                    "camera_rotation_deg": { # カメラの回転角度（度単位）
                         "x": math.degrees(camera.rotation_euler.x),
                         "y": math.degrees(camera.rotation_euler.y),
                         "z": math.degrees(camera.rotation_euler.z)
                     },
-                    "focal_length": {
-                        "focal_length": camera.data.lens
+                    "focal_length": { # カメラの焦点距離
+                        "focal_length": camera.data.lens,
+                        "focal_length_pixel": (bpy.context.scene.render.resolution_x / camera.data.sensor_width) * camera.data.lens
+                    },
+                    "resolution": { # レンダリング画像の解像度
+                        "width": bpy.context.scene.render.resolution_x,
+                        "height": bpy.context.scene.render.resolution_y
+                    },
+                    "sensor": { # センサーサイズ
+                        "width": camera.data.sensor_width,
+                        "height": camera.data.sensor_width * (bpy.context.scene.render.resolution_y / bpy.context.scene.render.resolution_x)
                     }
                 }
                 camera_data.append(camera_info)
 
                 # デバッグ情報を表示
-                print(f"Rendered: {filename}")
+                print(f"Rendered: {os.path.basename(filename)}")
                 print(f"Camera Position: {camera.location}")
                 print(f"Camera Rotation: {camera.rotation_euler}")
 
