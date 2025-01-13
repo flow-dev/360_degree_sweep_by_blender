@@ -211,7 +211,7 @@ if __name__ == '__main__':
             y = item['camera_location']['y']
             z = item['camera_location']['z']
             # カメラの回転（yaw, pitch, roll）を度数法で抽出
-            yaw = item['camera_rotation_deg']['z']
+            yaw = - item['camera_rotation_deg']['z'] # added minus for Reality Capture
             pitch = item['camera_rotation_deg']['x']
             roll = item['camera_rotation_deg']['y']
 
