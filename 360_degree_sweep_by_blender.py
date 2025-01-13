@@ -6,6 +6,7 @@ import math
 import os
 import shutil
 import json
+import csv
 
 def calc_camera_location(center_position, radius, pan_angle, tilt_angle):
     """
@@ -94,6 +95,7 @@ if __name__ == '__main__':
 
     # JSONファイルの保存先
     json_file_path = os.path.join(tmp_directory, "camera_data.json")
+    csv_file_path = os.path.join(tmp_directory, "camera_data.csv")
     camera_data = []
 
     # 新しいコレクションを作成または既存のコレクションを空にしてアクティブに設定
@@ -148,23 +150,23 @@ if __name__ == '__main__':
                     },
                     "radius": RADIUS,
                     "camera_location": { # カメラの位置
-                        "x": camera.location.x,
-                        "y": camera.location.y,
-                        "z": camera.location.z
+                        "x": round(camera.location.x,6),
+                        "y": round(camera.location.y,6),
+                        "z": round(camera.location.z,6)
                     },
                     "camera_rotation": { # カメラの回転角度（ラジアン単位）
-                        "x": camera.rotation_euler.x,
-                        "y": camera.rotation_euler.y,
-                        "z": camera.rotation_euler.z
+                        "x": round(camera.rotation_euler.x,6),
+                        "y": round(camera.rotation_euler.y,6),
+                        "z": round(camera.rotation_euler.z,6)
                     },
                     "camera_rotation_deg": { # カメラの回転角度（度単位）
-                        "x": math.degrees(camera.rotation_euler.x),
-                        "y": math.degrees(camera.rotation_euler.y),
-                        "z": math.degrees(camera.rotation_euler.z)
+                        "x": round(math.degrees(camera.rotation_euler.x),6),
+                        "y": round(math.degrees(camera.rotation_euler.y),6),
+                        "z": round(math.degrees(camera.rotation_euler.z),6)
                     },
                     "focal_length": { # カメラの焦点距離
                         "focal_length": camera.data.lens,
-                        "focal_length_pixel": (bpy.context.scene.render.resolution_x / camera.data.sensor_width) * camera.data.lens
+                        "focal_length_pixel": round(((bpy.context.scene.render.resolution_x / camera.data.sensor_width) * camera.data.lens) , 6)
                     },
                     "resolution": { # レンダリング画像の解像度
                         "width": bpy.context.scene.render.resolution_x,
@@ -172,7 +174,7 @@ if __name__ == '__main__':
                     },
                     "sensor": { # センサーサイズ
                         "width": camera.data.sensor_width,
-                        "height": camera.data.sensor_width * (bpy.context.scene.render.resolution_y / bpy.context.scene.render.resolution_x)
+                        "height": round((camera.data.sensor_width * (bpy.context.scene.render.resolution_y / bpy.context.scene.render.resolution_x)),6)
                     }
                 }
                 camera_data.append(camera_info)
@@ -192,4 +194,28 @@ if __name__ == '__main__':
     with open(json_file_path, 'w') as json_file:
         json.dump(camera_data, json_file, indent=4)
 
-    print(f"Camera data saved to {json_file_path}")
+    # CSVファイルに書き込み
+    with open(csv_file_path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        # ヘッダーを書き込む
+        writer.writerow(['cameraLabel', 'x', 'y', 'z', 'yaw', 'pitch', 'roll'])
+        
+        with open(json_file_path, 'r') as f:
+            data = json.load(f)
+
+        for item in data:
+            # ファイル名のみを抽出
+            filename = os.path.basename(item['filename'])
+            # カメラ位置の抽出
+            x = item['camera_location']['x']
+            y = item['camera_location']['y']
+            z = item['camera_location']['z']
+            # カメラの回転（yaw, pitch, roll）を度数法で抽出
+            yaw = item['camera_rotation_deg']['z']
+            pitch = item['camera_rotation_deg']['x']
+            roll = item['camera_rotation_deg']['y']
+
+            # CSVに書き込む
+            writer.writerow([filename, x, y, z, yaw, pitch, roll])
+
+    print(f"Camera data saved to {json_file_path},{csv_file_path}")
