@@ -7,6 +7,59 @@ import os
 import shutil
 import json
 import csv
+import struct
+import random
+
+# --- 追加機能：自動スケーリングされた白い点群の生成 ---
+def create_auto_white_ply(camera_locations, output_ply, num_points=10000):
+    """
+    カメラの座標リストから中心と半径を割り出し、白いPLYを作成する
+    """
+    if not camera_locations:
+        return
+
+    # 1. 中心座標の計算
+    cx = sum(p[0] for p in camera_locations) / len(camera_locations)
+    cy = sum(p[1] for p in camera_locations) / len(camera_locations)
+    cz = sum(p[2] for p in camera_locations) / len(camera_locations)
+
+    # 2. 半径の計算（カメラまでの平均距離の50%）
+    distances = [math.sqrt((p[0]-cx)**2 + (p[1]-cy)**2 + (p[2]-cz)**2) for p in camera_locations]
+    avg_dist = sum(distances) / len(distances)
+    auto_radius = avg_dist * 0.5 
+
+    print(f"Auto PLY - Center: ({cx:.3f}, {cy:.3f}, {cz:.3f}), Radius: {auto_radius:.3f}")
+
+    header = (
+        "ply\n"
+        "format binary_little_endian 1.0\n"
+        "comment Created in RealityCapture\n"
+        f"element vertex {num_points}\n"
+        "property float x\n"
+        "property float y\n"
+        "property float z\n"
+        "property uchar red\n"
+        "property uchar green\n"
+        "property uchar blue\n"
+        "end_header\n"
+    )
+
+    with open(output_ply, 'wb') as f:
+        f.write(header.encode('ascii'))
+        for _ in range(num_points):
+            phi = random.uniform(0, 2 * math.pi)
+            costheta = random.uniform(-1, 1)
+            u = random.uniform(0, 1)
+            theta = math.acos(costheta)
+            r = auto_radius * (u ** (1/3))
+            
+            x = cx + r * math.sin(theta) * math.cos(phi)
+            y = cy + r * math.sin(theta) * math.sin(phi)
+            z = cz + r * math.cos(theta)
+            
+            f.write(struct.pack('<fffBBB', x, y, z, 255, 255, 255))
+    print(f"Success: {output_ply} created with {num_points} points.")
+    return
 
 def calc_camera_location(center_position, radius, pan_angle, tilt_angle):
     """
@@ -88,7 +141,7 @@ if __name__ == '__main__':
     script_directory = os.path.dirname(bpy.data.filepath)
 
     # 画像の保存先のディレクトリを作成
-    tmp_directory = os.path.join(script_directory, "generated_images")
+    tmp_directory = os.path.join(script_directory, "generated_images3")
     if os.path.exists(tmp_directory):
         shutil.rmtree(tmp_directory)  # ディレクトリを削除して空にする
     os.makedirs(tmp_directory)
@@ -97,6 +150,7 @@ if __name__ == '__main__':
     json_file_path = os.path.join(tmp_directory, "camera_data.json")
     csv_file_path = os.path.join(tmp_directory, "camera_data.csv")
     camera_data = []
+    camera_locations = []  # カメラの位置を保存するリスト
 
     # 新しいコレクションを作成または既存のコレクションを空にしてアクティブに設定
     camera_collection = create_or_clear_collection("CameraCollection")
@@ -125,6 +179,9 @@ if __name__ == '__main__':
 
                 # カメラの焦点距離を設定
                 camera.data.lens = focal_length_val
+
+                # カメラ座標をリストに保存
+                camera_locations.append(camera.location)
 
                 # 新しく作成したカメラをアクティブに設定
                 bpy.context.scene.camera = camera
@@ -197,25 +254,29 @@ if __name__ == '__main__':
     # CSVファイルに書き込み
     with open(csv_file_path, 'w', newline='') as f:
         writer = csv.writer(f)
-        # ヘッダーを書き込む
-        writer.writerow(['cameraLabel', 'x', 'y', 'z', 'yaw', 'pitch', 'roll'])
+        # RealityCapture互換ヘッダー
+        writer.writerow(['#name', 'x', 'y', 'alt', 'heading', 'pitch', 'roll', 'f', 'px', 'py', 'k1', 'k2', 'k3', 'k4', 't1', 't2'])
         
         with open(json_file_path, 'r') as f:
             data = json.load(f)
 
         for item in data:
-            # ファイル名のみを抽出
-            filename = os.path.basename(item['filename'])
-            # カメラ位置の抽出
-            x = item['camera_location']['x']
-            y = item['camera_location']['y']
-            z = item['camera_location']['z']
-            # カメラの回転（yaw, pitch, roll）を度数法で抽出
-            yaw = - item['camera_rotation_deg']['z'] # added minus for Reality Capture
-            pitch = item['camera_rotation_deg']['x']
-            roll = item['camera_rotation_deg']['y']
+                writer.writerow([
+                    os.path.basename(item['filename']),
+                    item['camera_location']['x'],
+                    item['camera_location']['y'],
+                    item['camera_location']['z'],   # z を alt に入れる
+                    -item['camera_rotation_deg']['z'], # heading (符号反転が必要な場合あり)
+                    item['camera_rotation_deg']['x'],  # pitch
+                    item['camera_rotation_deg']['y'],  # roll
+                    item['focal_length']['focal_length'], # f
+                    0, 0, 0, 0, 0, 0, 0, 0 # その他レンズ歪みなどは0
+                ])
 
-            # CSVに書き込む
-            writer.writerow([filename, x, y, z, yaw, pitch, roll])
+    # 自動計算された白いPLYの書き出し
+    ply_file_path = os.path.join(tmp_directory, "auto_white_guide.ply")
+    create_auto_white_ply(camera_locations, ply_file_path)
 
     print(f"Camera data saved to {json_file_path},{csv_file_path}")
+    print("Done! CSV and PLY are ready for Postshot.")
+    
