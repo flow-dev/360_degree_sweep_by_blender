@@ -223,7 +223,8 @@ if __name__ == '__main__':
                     },
                     "focal_length": { # カメラの焦点距離
                         "focal_length": camera.data.lens,
-                        "focal_length_pixel": round(((bpy.context.scene.render.resolution_x / camera.data.sensor_width) * camera.data.lens) , 6)
+                        "focal_length_pixel": round(((bpy.context.scene.render.resolution_x / camera.data.sensor_width) * camera.data.lens) , 6),
+                        "focal_length_36mm_equiv": round((camera.data.lens * (36.0 / camera.data.sensor_width)), 6) # RealityCapture仕様に合わせてsensor_with=36mm換算焦点距離を追加
                     },
                     "resolution": { # レンダリング画像の解像度
                         "width": bpy.context.scene.render.resolution_x,
@@ -269,11 +270,11 @@ if __name__ == '__main__':
                     -item['camera_rotation_deg']['z'], # heading (符号反転が必要な場合あり)
                     item['camera_rotation_deg']['x'],  # pitch
                     item['camera_rotation_deg']['y'],  # roll
-                    item['focal_length']['focal_length'], # f
+                    item['focal_length']['focal_length_36mm_equiv'], # f　!RealityCapture仕様に合わせてsensor_with=36mm換算焦点距離を追加
                     0, 0, 0, 0, 0, 0, 0, 0 # その他レンズ歪みなどは0
                 ])
 
-    # 自動計算された白いPLYの書き出し
+    # 自動計算された3DGSガイド用PLYの書き出し
     ply_file_path = os.path.join(tmp_directory, "auto_white_guide.ply")
     create_auto_white_ply(camera_locations, ply_file_path)
 
