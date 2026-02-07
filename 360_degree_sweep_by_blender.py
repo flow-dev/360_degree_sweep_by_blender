@@ -275,7 +275,7 @@ if __name__ == '__main__':
                 ])
 
     # 自動計算された3DGSガイド用PLYの書き出し
-    ply_file_path = os.path.join(tmp_directory, "auto_white_guide.ply")
+    ply_file_path = os.path.join(tmp_directory, "init_guide_points.ply")
     create_auto_white_ply(camera_locations, ply_file_path)
 
     print(f"Camera data saved to {json_file_path},{csv_file_path}")
